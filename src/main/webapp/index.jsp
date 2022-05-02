@@ -7,8 +7,9 @@
 <title>Game recommand site</title>
 </head>
 <body>
-<jsp:include page="header.jsp"/>
-<jsp:include page="list.jsp"/>
-<jsp:include page="footer.jsp"/>
+	<jsp:include page="crawler/ranking.jsp"/>
+	<jsp:include page="header.jsp"/>
+	<jsp:include page="list.jsp"/>
+	<jsp:include page="footer.jsp"/>
 </body>
 </html>
