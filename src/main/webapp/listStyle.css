@@ -1,0 +1,263 @@
+@charset "EUC-KR";
+
+section {
+margin:0 auto;
+box-sizing:border-box;
+padding-bottom:20px;
+}
+
+
+
+#contents {
+width:1800px;
+margin:0 auto;
+overflow:hidden;
+display:flex;
+flex-wrap: wrap;
+}
+
+#profile{
+position:absolute;
+width:350px;
+height:1000px;
+background:skyblue;
+margin:20px;
+border-radius:5px;
+text-align:center;
+right:0;
+}
+#profile .title{
+font-size:2em;
+border-bottom:1px solid #cccccc;
+background:#1e014f;
+border-radius: 5px 5px 0 0;
+color:white;
+height:70px;
+line-height:70px;
+}
+#profile .attendance{
+height:100px;
+background:white;
+}
+#profile .attendance a {
+width:200px;
+height:60px;
+line-height:60px;
+background:rgb(205, 196, 22);
+border-radius:60px;
+margin-top:8px;
+font-size:1.5em;
+}
+#profile .attendance a:hover {
+font-weight:bold;
+}
+#profile .information {
+margin-top:5px;
+height:400px;
+}
+#profile .information img{
+width:auto;
+height:auto;
+border-radius:200px;
+}
+#profile .information ul {
+list-style:none;
+overflow:hidden;
+text-align:center;
+}
+#profile .information ul li {
+float:left;
+height:40px;
+line-height:40px;
+width:120px;
+background:#cccccc;
+margin:5px;
+border-radius:5px;
+}
+#profile .information ul li a:hover {
+font-weight:bold;
+text-decoration:underline;
+}
+.box {
+margin:20px 0 0 20px;
+background:white;
+border-radius:5px;
+}
+.information-details li:nth-child(2) {
+	color:red;
+}
+
+#first-box {
+height:600px;
+width:500px;
+}
+#first-box div .main_gameRank_table{
+	width:100%;
+	height:100%;
+	border-collapse: collapse
+}
+#first-box .main_gameRank_border:nth-child(n+1):nth-child(-n-3) .main_gameRank_ranking {
+	color:#ff0000;
+}
+#first-box .main_gameRank_ranking{
+	color:#919d93;
+	font-size:20px;
+	font-weight:bolder;
+	width : 15%;
+	text-align:center;
+	padding:5px;
+}
+#first-box .main_gameRank_thread{
+	text-align:center;
+}
+#first-box .main_gameRank_att{
+	color : gray;
+}
+#first-box .main_gameRank_img{
+	width:50px;
+	padding:2px;
+	vertical-align:middle;
+}
+#first-box .main_gameRank_gameName{
+	width:80%;
+	padding:5px;
+}
+#first-box .main_gameRank_ImgFile{
+	width :75px;
+	height:46px;
+}
+#first-box .main_gameRank_border{
+	border-top:1px solid #e6e6e6;
+}
+
+	
+#second-box {
+height:600px;
+width:860px;
+box-sizing:border-box;
+}
+.slideshow-container {
+width: 100%;
+height: 300px;
+position: static;
+margin: 0px;
+}
+.main_slideImg{
+width: 100%; 
+height: 300px; 
+top : 90px;
+margin:0;
+padding:0;
+}
+.main_slide_header{
+height:30px;
+padding:5px;
+}
+.main_title{
+margin-top:10px;
+margin:auto;
+display:inline-block;
+vertical-align:middle;
+font-size:25px;	
+}
+.main_prev, .main_next {
+ cursor: pointer;
+ transition: 0.6s ease;
+ margin:0;
+ padding:0;
+ width:100%;
+ height:100%;
+}
+.main_prev:hover, .main_next:hover{
+background-color: #717171;
+}
+.news{
+width:760px;
+height:412px;
+margin:auto;
+border-radius:10px;
+}
+.main_dot {
+ cursor:pointer;
+ background-color: #ffffff;
+ display: inline-block;
+ transition: background-color 0.6s ease;
+ margin:0;
+ padding:0;
+ width:100%;
+ height:100%;
+ border:0;
+ font-size:18px;
+}
+.main_selector{
+margin:auto;
+width:100%;
+height:60px;
+padding:0;
+border:0;
+border-spacing:0;
+}
+th{
+padding:2px;
+margin:0;
+border-left:1px solid #c0c0c0;
+}
+tr{
+padding:0;
+margin:0;
+}
+active, .main_dot:hover {
+  background-color: #717171;
+}
+
+
+#third-box {
+height:500px;
+width:1380px;
+}
+.main_list_object{
+height:400px;
+width:300px;
+background-color:white;
+margin:20px;
+display:inline;
+float:left;
+}
+.main_list_user{
+	color:#c84a4c;
+}
+.main_list_rank{
+	float:right;
+	background-color:#c6282c;
+	color:white;
+	height:60px;
+	width:53px;
+	text-align:center;
+}
+.main_list_gameImg{
+	text-align:center;
+	margin-top:50px;
+	height:250px;
+}
+.main_list_gameName{
+	text-align:center;
+}
+.main_list_link{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	background-color:#f0c098;
+	text-align:center;
+	vertical-align:middle;
+	color:black;
+	font-size:20px;
+	font-weight:bold;
+}
+
+
+#fourth-box {
+height:300px;
+width:1185px;
+
+}
+
