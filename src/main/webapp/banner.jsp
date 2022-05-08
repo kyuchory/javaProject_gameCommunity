@@ -26,7 +26,7 @@ overflow:hidden;
 display:inline-block;
 }
 #banner .main-menu li{
-width:200px;
+width:300px;
 float:left;
 text-align:center;
 list-style:none;
@@ -58,7 +58,7 @@ display:inline-block;
 background:white;
 }
 #banner .slide-menu li{
-width:200px;
+width:300px;
 float:left;
 text-align:center;
 list-style:none;

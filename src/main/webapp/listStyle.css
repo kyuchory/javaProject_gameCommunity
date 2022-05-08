@@ -17,14 +17,14 @@ flex-wrap: wrap;
 }
 
 #profile{
-position:absolute;
+position:absolute;		
 width:350px;
 height:1000px;
 background:#555555;
 margin:20px;
 border-radius:5px;
 text-align:center;
-right:0;
+left:1460px;
 }
 #profile .title{
 font-size:2em;
@@ -75,6 +75,7 @@ background:black;
 color:white;
 }
 #profile .information ul {
+display:block;
 list-style:none;
 overflow:hidden;
 text-align:center;
@@ -87,6 +88,10 @@ line-height:40px;
 width:120px;
 background:#cccccc;
 border:1px solid black;
+}
+#profile .information ul li a {
+display:block;
+	
 }
 #profile .information ul li a:hover {
 font-weight:bold;
@@ -110,7 +115,7 @@ width:500px;
 	height:100%;
 	border-collapse: collapse
 }
-#first-box .main_gameRank_border:nth-child(n+1):nth-child(-n-3) .main_gameRank_ranking {
+#first-box .main_gameRank_border:nth-child(-n+4) .main_gameRank_ranking {
 	color:#ff0000;
 }
 #first-box .main_gameRank_ranking{

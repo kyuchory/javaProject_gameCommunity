@@ -51,8 +51,9 @@
 					<td>순위</td>
 					<td colspan="2">게임명</td>
 				</tr>
-				<%!int i = 0; %>
+				<%!int j = 0; %>
 				<%for(GameRank g: game){
+					if (j++ < 10) {
 					out.print(String.format(
 						"<tr class='main_gameRank_border'>"+
 							"<td class='main_gameRank_ranking'>%d&nbsp</td>"+
@@ -63,9 +64,10 @@
 									"<span>%s</span>&nbsp&nbsp|&nbsp&nbsp"+
 									"<span>%s&nbsp&nbsp</span>"+
 									"<span>%s</span>"+			
-								"</div>"+
-						"</tr>",g.getRank(), g.getImg(), g.getName(), g.getName(), g.getCompany(), g.getGenre(), g.getPayment()));
-				//i++; if(i >= 10) {break;}
+								"%d</div>"+
+						"</tr>",g.getRank(), g.getImg(), g.getName(), g.getName(), g.getCompany(), g.getGenre(), g.getPayment(), i));
+					}
+					else {j = 0; break;}
 				} %>
 				</table>
 			</div>
