@@ -12,6 +12,7 @@
 	
 	* {
 	margin:0;
+	padding:0;
 	}
 	a{
 	display:inline-block;
@@ -57,7 +58,7 @@
 	#mySidenav .closebtn {
 	    position: absolute;
 	    top: 5px;
-	    left: -75px;
+	    left: -80px;
 	    font-size: 36px;
 	    margin-left: 50px;
 	}

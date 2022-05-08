@@ -20,7 +20,7 @@ flex-wrap: wrap;
 position:absolute;
 width:350px;
 height:1000px;
-background:skyblue;
+background:#555555;
 margin:20px;
 border-radius:5px;
 text-align:center;
@@ -37,7 +37,7 @@ line-height:70px;
 }
 #profile .attendance{
 height:100px;
-background:white;
+background:#eeeeee;
 }
 #profile .attendance a {
 width:200px;
@@ -52,18 +52,33 @@ font-size:1.5em;
 font-weight:bold;
 }
 #profile .information {
-margin-top:5px;
 height:400px;
 }
-#profile .information img{
-width:auto;
-height:auto;
-border-radius:200px;
+#profile .information .status {
+color:white;
+position:relative;
+}
+#profile .information .status p {
+line-height:50px;
+text-align:left;
+margin-left:50px;
+}
+#profile .information .status a {
+width:70px;
+height:40px;
+line-height:40px;
+display:block;
+position:absolute;
+top:0;
+right:0;
+background:black;
+color:white;
 }
 #profile .information ul {
 list-style:none;
 overflow:hidden;
 text-align:center;
+margin:10px auto;
 }
 #profile .information ul li {
 float:left;
@@ -71,8 +86,7 @@ height:40px;
 line-height:40px;
 width:120px;
 background:#cccccc;
-margin:5px;
-border-radius:5px;
+border:1px solid black;
 }
 #profile .information ul li a:hover {
 font-weight:bold;
