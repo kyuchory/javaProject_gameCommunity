@@ -4,30 +4,33 @@ section {
 margin:0 auto;
 box-sizing:border-box;
 padding-bottom:20px;
+background: url(//ssl.nexon.com/s2/game/fo4/obt/theme/default/bg_main_0517.jpg) center 0 no-repeat;
 }
 
 
 
 #contents {
-width:1800px;
+width:1600px;
+height:2000px; /* 수정 */
 margin:0 auto;
 overflow:hidden;
 display:flex;
 flex-wrap: wrap;
+position:relative;
 }
-
 #profile{
-position:absolute;		
-width:350px;
-height:1000px;
-background:#555555;
+	position:absolute;
+	top:0;
+	left:1290px;
+width:270px;
+height:500px;
 margin:20px;
 border-radius:5px;
 text-align:center;
-left:1460px;
+background:#303030;
 }
 #profile .title{
-font-size:2em;
+font-size:1.7em;
 border-bottom:1px solid #cccccc;
 background:#1e014f;
 border-radius: 5px 5px 0 0;
@@ -40,19 +43,19 @@ height:100px;
 background:#eeeeee;
 }
 #profile .attendance a {
-width:200px;
-height:60px;
-line-height:60px;
+width:150px;
+height:40px;
+line-height:40px;
 background:rgb(205, 196, 22);
 border-radius:60px;
 margin-top:8px;
-font-size:1.5em;
+font-size:1.2em;
 }
 #profile .attendance a:hover {
 font-weight:bold;
 }
 #profile .information {
-height:400px;
+	text-align:center;
 }
 #profile .information .status {
 color:white;
@@ -65,8 +68,8 @@ margin-left:50px;
 }
 #profile .information .status a {
 width:70px;
-height:40px;
-line-height:40px;
+height:30px;
+line-height:30px;
 display:block;
 position:absolute;
 top:0;
@@ -74,31 +77,30 @@ right:0;
 background:black;
 color:white;
 }
-#profile .information ul {
+#profile .information .information-details {
 display:block;
 list-style:none;
 overflow:hidden;
-text-align:center;
-margin:10px auto;
+margin:10px 50px; /* 수정 */
 }
-#profile .information ul li {
+#profile .information .information-details li {
 float:left;
-height:40px;
-line-height:40px;
-width:120px;
-background:#cccccc;
+width:80px;
+height:30px;
+line-height:30px;
 border:1px solid black;
+font-size:0.5em;
 }
-#profile .information ul li a {
+#profile .information .information-details li a {
+color:rgb(217, 217, 217);
 display:block;
-	
+	font-size:0.8em;
 }
-#profile .information ul li a:hover {
+#profile .information .information-details li a:hover {
 font-weight:bold;
 text-decoration:underline;
 }
 .box {
-margin:20px 0 0 20px;
 background:white;
 border-radius:5px;
 }
@@ -107,20 +109,26 @@ border-radius:5px;
 }
 
 #first-box {
-height:600px;
-width:500px;
+	position:absolute;
+	top:20px;
+	left:20px;
+height:500px;
+width:350px;
 }
 #first-box div .main_gameRank_table{
 	width:100%;
 	height:100%;
 	border-collapse: collapse
 }
-#first-box .main_gameRank_border:nth-child(-n+4) .main_gameRank_ranking {
+#first-box div .main_gameRank_table caption{
+	height:20px;
+	padding:5px;
+}
+#first-box .main_gameRank_border:nth-child(-n+5) .main_gameRank_ranking {
 	color:#ff0000;
 }
 #first-box .main_gameRank_ranking{
 	color:#919d93;
-	font-size:20px;
 	font-weight:bolder;
 	width : 15%;
 	text-align:center;
@@ -130,6 +138,7 @@ width:500px;
 	text-align:center;
 }
 #first-box .main_gameRank_att{
+	font-size:0.7em;
 	color : gray;
 }
 #first-box .main_gameRank_img{
@@ -141,6 +150,9 @@ width:500px;
 	width:80%;
 	padding:5px;
 }
+#first-box .main_gameRank_gameName a{
+	display:block;
+}
 #first-box .main_gameRank_ImgFile{
 	width :75px;
 	height:46px;
@@ -151,35 +163,69 @@ width:500px;
 
 	
 #second-box {
-height:600px;
-width:860px;
+height:500px;
+width:900px;
 box-sizing:border-box;
+	position:absolute;
+	top:20px;
+	left:390px;
 }
-.slideshow-container {
+#second-box .main-title {
+	height:20px;
+	padding:5px;
+	border-bottom:1px solid #ececec;
+	text-align:center;
+}
+#second-box .news-title{
+	width:300px;
+	height:150px;
+	position:absolute;
+	top:90px;
+	left:10px;
+	font-weight:bold;
+	font-size:1.5em;
+}
+#second-box .image-frame{
+	width:550px;
+	height:200px;
+	position:absolute;
+	top:40px;
+	left:320px;
+}
+#second-box .image-frame img{
+	width:100%;
+	height:100%;
+}
+#second-box .news-summary{
+	width:860px;
+	height:100px;
+	position:absolute;
+	top:250px;
+	left:10px;
+}
+#second-box .news-info{
+	width:860px;
+	height:50px;
+	position:absolute;
+	top:350px;
+	left:10px;
+	font-size:0.7em;
+	color:#999999;
+}
+#second-box .slideshow-container {
 width: 100%;
-height: 300px;
 position: static;
 margin: 0px;
 }
-.main_slideImg{
+#second-box .main_slideImg{
 width: 100%; 
-height: 300px; 
+height: 250px; 
 top : 90px;
 margin:0;
 padding:0;
 }
-.main_slide_header{
-height:30px;
-padding:5px;
-}
-.main_title{
-margin-top:10px;
-margin:auto;
-display:inline-block;
-vertical-align:middle;
-font-size:25px;	
-}
-.main_prev, .main_next {
+
+#second-box .main_prev, .main_next {
  cursor: pointer;
  transition: 0.6s ease;
  margin:0;
@@ -187,16 +233,16 @@ font-size:25px;
  width:100%;
  height:100%;
 }
-.main_prev:hover, .main_next:hover{
+#second-box .main_prev:hover, .main_next:hover{
 background-color: #717171;
 }
-.news{
+#second-box .news{
 width:760px;
 height:412px;
 margin:auto;
 border-radius:10px;
 }
-.main_dot {
+#second-box .main_dot {
  cursor:pointer;
  background-color: #ffffff;
  display: inline-block;
@@ -208,75 +254,109 @@ border-radius:10px;
  border:0;
  font-size:18px;
 }
-.main_selector{
+#second-box .main_selector{
 margin:auto;
 width:100%;
 height:60px;
 padding:0;
 border:0;
 border-spacing:0;
+	position:absolute;
+	bottom:0;
 }
-th{
+#second-box th{
 padding:2px;
 margin:0;
 border-left:1px solid #c0c0c0;
 }
-tr{
-padding:0;
-margin:0;
+#second-box tr{
+bottom:0;
 }
-active, .main_dot:hover {
+#second-box active, .main_dot:hover {
   background-color: #717171;
 }
 
 
 #third-box {
-height:500px;
-width:1380px;
+height:300px;
+width:1560px;
+	position:absolute;
+	top: 540px;
+	left:20px;
 }
-.main_list_object{
-height:400px;
-width:300px;
-background-color:white;
-margin:20px;
-display:inline;
-float:left;
+#third-box .best-game {
+	list-style:none;
+	
 }
-.main_list_user{
-	color:#c84a4c;
-}
-.main_list_rank{
-	float:right;
-	background-color:#c6282c;
-	color:white;
-	height:60px;
-	width:53px;
+#third-box .best-game .best-game-list{
+	top:0;
+	list-style:none;
+	width:300px;
+	display:inline-block;
+	margin-left:10px;
+	overflow:hidden;
 	text-align:center;
+	box-sizing:border-box;
 }
-.main_list_gameImg{
-	text-align:center;
-	margin-top:50px;
-	height:250px;
-}
-.main_list_gameName{
-	text-align:center;
-}
-.main_list_link{
-	width:100%;
+#third-box .best-game .best-game-list .game-rank{
+	width:50px;
 	height:50px;
-	line-height:50px;
-	background-color:#f0c098;
-	text-align:center;
-	vertical-align:middle;
-	color:black;
-	font-size:20px;
+	color:white;
 	font-weight:bold;
+	margin-top:5px;
+	background:#cc0000;
+	border-radius:5px;
+}
+#third-box .best-game .best-game-list .game-image{
+	margin-top:5px;
+	height:150px;
+	width:300px;
+}
+#third-box .best-game .best-game-list img{
+	width:100%;
+	height:100%;
+	border-radius:10px;
 }
 
+#third-box .best-game .best-game-list .game-name{
+	font-weight:bold;
+	font-size:1.2em;
+}
+#third-box .best-game .best-game-list .game-genre{
+	color:#999999;
+}
+#third-box .best-game .best-game-list a{
+	width:150px;
+	height:30px;
+	line-height:30px;
+	display:block;
+	background:#ffd9c6;
+	font-weight:bold;
+	border-radius:5px;
+	margin:5px auto;
+}
+
+.board_header {
+	height:20px;
+	padding:5px;
+	border-bottom:1px solid #ececec;
+	text-align:center;
+}
 
 #fourth-box {
-height:300px;
-width:1185px;
+height:400px;
+width:770px;
+	position:absolute;
+	top:860px;
+	left:20px;
+}
 
+
+#fifth-box {
+height:400px;
+width:770px;
+	position:absolute;
+	top:860px;
+	left:810px;
 }
 

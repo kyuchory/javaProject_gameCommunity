@@ -17,7 +17,7 @@
 	}
 	
 	h5 {
-	text-align:right;
+	text-align:center;
 	}
 	h5 a {
 	color:#cccccc;

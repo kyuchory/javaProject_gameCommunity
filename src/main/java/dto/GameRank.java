@@ -1,6 +1,6 @@
 package dto;
 
-public class GameRank {
+public class gameRank {
 	private int rank;
 	private String name;
 	private String company;
@@ -8,10 +8,10 @@ public class GameRank {
 	private String payment;
 	private String img;
 	
-	public GameRank(){
+	public gameRank(){
 	}
 
-	public GameRank(int rank, String name, String company, String genre, String payment, String img) {
+	public gameRank(int rank, String name, String company, String genre, String payment, String img) {
 		super();
 		this.rank = rank;
 		this.name = name;

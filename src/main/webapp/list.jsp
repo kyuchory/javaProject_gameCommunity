@@ -23,94 +23,68 @@
 <jsp:include page="banner.jsp" />
 
 <section style="background:#eeeeee;">
-	<div id="profile">
-      <div class="title">프로필</div>
-      <div class="attendance">
-         <a href="none">출석체크</a>
-         <p>현재 출석 포인트 : <span class="current-point">0</span></p>
-      </div>
-      <div class="information">
-         <div class="status">
-            <p><span class='id'>${id}</span>님 안녕하세요.</p>
-            <a href="/login_or_logout.do?log_mode=${login_out}">${login_out}logout</a>
-         </div>
-         <ul class="information-details">
-            <li><a href="none">회원정보</a></li>
-            <li><a href="none">나의 게임 정보</a></li>
-            <li><a href="none">작성글</a></li>
-            <li><a href="none">댓글</a></li>
-         </ul>
-      </div>
-   </div>
+	
 	<div id="contents">
+		<div id="profile">
+	      <div class="title">Profile</div>
+	      <div class="attendance">
+	         <a href="none">출석체크</a>
+	         <p>현재 출석 포인트 : <span class="current-point">0</span></p>
+	      </div>
+	      <div class="information">
+	         <div class="status">
+	            <p><span class='id'>${id}</span>님 안녕하세요.</p>
+	            <a href="/login_or_logout.do?log_mode=${login_out}">${login_out}로그아웃</a>
+	         </div>
+	         <ul class="information-details">
+	            <li><a href="none">회원정보</a></li>
+	            <li><a href="none">나의 게임 정보</a></li>
+	            <li><a href="none">작성글</a></li>
+	            <li><a href="none">댓글</a></li>
+	         </ul>
+	      </div>
+	   </div>
+	   
 		<div id="first-box" class="box">
 			<div>
 				<table class="main_gameRank_table">
 				<caption>게임순위</caption>
-				<tr class="main_gameRank_thread">
-					<td>순위</td>
-					<td colspan="2">게임명</td>
-				</tr>
+				
 				<%!int j = 0; %>
-				<%for(GameRank g: game){
-					if (j++ < 10) {
-					out.print(String.format(
-						"<tr class='main_gameRank_border'>"+
-							"<td class='main_gameRank_ranking'>%d&nbsp</td>"+
-							"<td class='main_gameRank_img'><img width='75px' height='46px' src='%s'></td>"+
-							"<td class='main_gameRank_gameName'>"+
-								"<a class='game-name' href='https://search.naver.com/search.naver?query=%s'>%s</a>"+
-								"<div class='main_gameRank_att'>"+
-									"<span>%s</span>&nbsp&nbsp|&nbsp&nbsp"+
-									"<span>%s&nbsp&nbsp</span>"+
-									"<span>%s</span>"+			
-								"%d</div>"+
-						"</tr>",g.getRank(), g.getImg(), g.getName(), g.getName(), g.getCompany(), g.getGenre(), g.getPayment(), i));
+				<%
+				for(gameRank g: game){
+						if (j++ < 10) {
+						out.print(String.format(
+							"<tr class='main_gameRank_border'>"+
+								"<td class='main_gameRank_ranking'>%d&nbsp</td>"+
+								"<td class='main_gameRank_img'><img width='50px' height='30px' src='%s'></td>"+
+								"<td class='main_gameRank_gameName'>"+
+									"<a class='game-name' href='https://search.naver.com/search.naver?query=%s'>%s</a>"+
+									"<div class='main_gameRank_att'>"+
+										"<span>%s</span>&nbsp&nbsp|&nbsp&nbsp"+
+										"<span>%s&nbsp&nbsp</span>"+
+										"<span>%s</span>"+			
+									"%d</div>"+
+							"</tr>",g.getRank(), g.getImg(), g.getName(), g.getName(), g.getCompany(), g.getGenre(), g.getPayment(), i));
+						}
+						else {j = 0; break;}
 					}
-					else {j = 0; break;}
-				} %>
+				%>
 				</table>
 			</div>
 		</div>
+		
 		<div id="second-box" class="box">
-			<div class="main_slide_header">
-				<div class="main_title">게임소식</div>
-				<div class="main_title" style="float:right">
-					<a class="link_news" href="#">기사 목록 보기</a>
-				</div>
-			</div>
-			<div class="slideshow-container">
-				<div class="mySlides fade2">
-					<a href="#">
-						<img class="main_slideImg" src="1.jpg"/>
-					</a>
-				</div>
-				<div class="mySlides fade2">
-					<a href="#">
-						<img class="main_slideImg" src="2.jpg"/>
-					</a>
-				</div>
-				<div class="mySlides fade2">
-					<a href="#">
-						<img class="main_slideImg" src="3.jpg"/>
-					</a>
-				</div>
-				<div class="mySlides fade2">
-					<a href="#">
-						<img class="main_slideImg" src="#"/>
-					</a>
-				</div>
-				<div class="mySlides fade2">
-					<a href="#">
-						<img class="main_slideImg" src="#"/>
-					</a>
-				</div>
-				<div class="mySlides fade2">
-					<a href="#">
-						<img class="main_slideImg" src="#"/>
-					</a>
-				</div>
-			</div>
+			<div class="main-title">게임소식</div>
+				<a href="https://www.inven.co.kr/webzine/news/?news=271546">
+					<div class="news-title">'스타듀 밸리' 출시 6년 만에 2,000만 장 판매 [9]</div>
+					<div class='image-frame'>
+						<img src="1.jpg"/>
+					</div>
+					<div class="news-summary">고전적인 농업 시뮬레이션을 새롭게 각색, PC 플랫폼으로 옮겨내며 많은 사랑을 받은 스타듀 밸리가 판매량 2,000만 장을 넘기며 인디 게임 역사에 다시 이름을 새겼다. 스타듀 밸리의 2,000만 장 돌파 소식은 공식 홈페이지 게임 히스토리 섹션에 새로 추가되며 알려졌다. 올해 3월 해당 기록을 세운 스타듀 밸리는 PC를 시작으로 PS4, Xbox One,...</div>
+					<div class="news-info">게임뉴스 | 강승진 기자 (Looa@inven.co.kr) | 2022-05-10 10:59</div>
+				</a>
+
 			<table class="main_selector">
 				<tr>
 					<th style="border-left:none">
@@ -142,74 +116,31 @@
 		</div>
 		
 		<div id="third-box" class="box">
-			<div class="main_list_object">
-			<span class="main_list_user">♥300</span>
-			<div class="main_list_rank">Best<br>
-				<p style="display:inline;font-size:25px;margin:0">1</p>
-			</div>
-			<div class="main_list_gameImg">
-				<img src="gameImg/1.jpg">
-			</div>
-			<div class="main_list_gameName">리그 오브 레전드<br>
-				<p style="display:inline;color:#666693">장르 : AOS&nbsp;&nbsp; 부분유료화
-			</div>
-			<br>
-			<div class="main_list_link" style="border-radius:10px;">
-				<a href="#" style="color:black;">게임 보러가기</a>
-			</div>
-			</div>
-			<div class="main_list_object">
-				<span class="main_list_user">♥200</span>
-				<div class="main_list_rank">Best<br>
-					<p style="display:inline;font-size:25px;margin:0">2</p>
-				</div>
-				<div class="main_list_gameImg">
-					<img src="gameImg/2.jpg">
-				</div>
-				<div class="main_list_gameName">로스트 아크<br>
-					<p style="display:inline;color:#666693">장르 : MMORPG&nbsp;&nbsp; 부분유료화
-				</div>
-				<br>
-				<div class="main_list_link" style="border-radius:10px;">
-					<a href="#" style="color:black;">게임 보러가기</a>
-				</div>
-			</div>
-			<div class="main_list_object">
-				<span class="main_list_user">♥100</span>
-				<div class="main_list_rank">Best<br>
-					<p style="display:inline;font-size:25px;margin:0">3</p>
-				</div>
-				<div class="main_list_gameImg">
-					<img src="gameImg/3.jpg">
-				</div>
-				<div class="main_list_gameName">피파 온라인 4<br>
-					<p style="display:inline;color:#666693">장르 : 스포츠&nbsp;&nbsp; 부분유료화
-				</div>
-				<br>
-				<div class="main_list_link" style="border-radius:10px;">
-					<a href="#" style="color:black;">게임 보러가기</a>
-				</div>
-			</div>
-			<div class="main_list_object">
-				<span class="main_list_user">♥50</span>
-				<div class="main_list_rank">Best<br>
-					<p style="display:inline;font-size:25px;margin:0">4</p>
-				</div>
-				<div class="main_list_gameImg">
-					<img src="gameImg/4.jpg">
-				</div>
-				<div class="main_list_gameName">발로란트<br>
-					<p style="display:inline;color:#666693">장르 : FPS&nbsp;&nbsp; 무료
-				</div>
-				<br>
-				<div class="main_list_link" style="border-radius:10px;">
-					<a href="#" style="color:black;">게임 보러가기</a>
-				</div>
-			</div>
+			<ul class="best-game">			
+			<%!int k = 0; %>
+				<%
+				for(gameRank g: game){
+											if (k++ < 5) {
+											out.print(String.format(
+													"<li class='best-game-list'>"+
+														"<div class='game-rank'>Best<br>%d</div>"+
+														"<div class='game-image'><img src='%s'></div>"+
+														"<div class='game-name'>%s</div>"+
+														"<div class='game-genre'><span>%s</span>&nbsp&nbsp|&nbsp&nbsp"+
+														"<span>%s&nbsp&nbsp</span></div>"+
+														"<a href='https://search.naver.com/search.naver?query=%s'>게임 바로가기</a>"+
+													"</li>",g.getRank(), g.getImg(), g.getName(), g.getCompany(), g.getGenre(), g.getName(), i));
+											}
+											else {k = 0; break;}
+										}
+				%>
+				</ul>
 		</div>
 		<div id="fourth-box" class="box">
-			<div>
-			</div>
+			<div class="board_header">자유게시판</div>
+		</div>
+		<div id="fifth-box" class="box">
+			<div class="board_header">추천게시판</div>
 		</div>
 	</div>
 </section>
