@@ -87,6 +87,7 @@
 	#banner .main-menu {
 	-webkit-padding-start:0px;
 	overflow:hidden;
+	margin-right:100px;
 	}
 	#banner .main-menu li{
 	width:200px;
@@ -107,6 +108,7 @@
 	font-weight:bold;
 	}
 	#banner .slide-menu {
+	margin-right:100px;
 	display:none;  /*마우스 오버 시 보이게*/
 	font-size:0.7em;
 	line-height:30px;

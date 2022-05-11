@@ -7,45 +7,54 @@
 <%@ page import="org.jsoup.select.Elements" %>
 <%@page import="dto.gameNews" %>
 <%@page import="java.util.ArrayList" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html>
 <html>
-<head>
+<head>	
 <meta charset="EUC-KR">
 <title>Insert title here</title>
 </head>
 <body>
 	<%
-	String url ="https://www.inven.co.kr/webzine/news/";
-		Document doc = null;
-		
-		try {
-			doc = Jsoup.connect(url).get();
-		}catch (IOException e) {
-			e.printStackTrace();
-		}
+	String urln ="https://www.gamemeca.com/news.php";
+	Document docn = null;
+	try {
+	   docn = Jsoup.connect(urln).get();
+	}catch (IOException e) {
+	   e.printStackTrace();
+	}finally{}
 
-		Elements e1 = doc.select(".webzineNewsList");
-		Iterator<Element> iImage = e1.select("img.banner").iterator();
-		Iterator<Element> iTitle = e1.select(".title").iterator();
-		Iterator<Element> iSummary = e1.select(".summary").iterator();
-		Iterator<Element> iInfo = e1.select(".info").iterator();
-		Iterator<Element> iURL = e1.select("div.content").select("a").iterator();
+	Elements en1 = docn.select(".list_news").select("li").not(".google-auto-placed");
+	Iterator<Element> ien1 = en1.select("a").iterator();//주소 , attr("href") 해야됨
+	Iterator<Element> ien2 = en1.select("a").iterator();//제목
+	Iterator<Element> ien3 = en1.select("img").iterator();
+	Iterator<Element> ien4 = en1.select(".day_news").iterator();//게시날짜
+	Iterator<Element> ien5 = en1.select(".desc_thumb_h").iterator();
+	Iterator<Element> ien6 = en1.select(".desc_thumb").iterator();
+
+	ArrayList<gameNews> gamen = new ArrayList<>();
+	while(ien5.hasNext()) {
+		ien2.next().text();
+		String title = ien2.next().text();
+		String summary = ien5.next().text();
+		String info = ien4.next().text();
+		String image = ien3.next().attr("src");
+		String newsUrl = ien1.next().attr("href");
 		
-		ArrayList<gameNews> game = null;
-		game = new ArrayList<>();
+		gamen.add(new gameNews(title, summary, info, image, newsUrl));
+	}
+	while(ien6.hasNext()) {
+		ien2.next().text();
+		String title = ien2.next().text();
+		String summary = ien6.next().text();
+		String info = ien4.next().text();
+		String image = ien3.next().attr("src");
+		String newsUrl = ien1.next().attr("href");
 		
-		out.print(e1.select(".title"));
-		while(iImage.hasNext()) {
-			String title = iTitle.next().text();
-			String summary = iSummary.next().text();
-			String info = iInfo.next().text();
-			String image = iImage.next().attr("src");
-			String newsurl = iURL.next().attr("href");
-			out.print(iImage.next());
-			game.add(new gameNews(title, summary, info, image, newsurl));
-		}
-		out.print(game);
+		gamen.add(new gameNews(title, summary, info, image, newsUrl));
+	}
 	%>
+	
 </body>
 </html>

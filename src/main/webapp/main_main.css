@@ -276,7 +276,7 @@ border-left:1px solid #c0c0c0;
 #second-box tr{
 bottom:0;
 }
-#second-box active, .main_dot:hover {
+#second-box .active, .main_dot:hover {
   background-color: #717171;
 }
 
