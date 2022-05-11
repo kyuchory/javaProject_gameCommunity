@@ -12,7 +12,7 @@
 out.println(session.getAttribute("email"));
 out.println(session.getAttribute("password"));
 %>
-<form action="comm_testForm.jsp">
+<form action="comm_free.jsp">
 	<input type=submit value="자유게시판 이동"/>
 </form>
 </body>

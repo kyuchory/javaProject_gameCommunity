@@ -10,7 +10,9 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+import dto.Community;
 import dto.Member;
+import jdbc.ConnectionProvider;
 
 public class MemberDaoImpl {
 	private Connection conn = null;
@@ -245,5 +247,37 @@ public class MemberDaoImpl {
 		}
 		return null;
 	}
-
+	
+	
+	/*
+	 * public List getBoardList(int startRow, int pageSize){ List boardList = new
+	 * ArrayList();
+	 * 
+	 * try { // 1,2 디비연결 con = getCon(); // 3. sql 작성 &amp; pstmt 객체 생성 // 글 re_ref
+	 * 최신글 위쪽(내림차순), re_seq (오름차순) // DB 데이터를 원하는만큼씩 잘라내기 : limit 시작행-1, 페이지크기 sql =
+	 * "select * from itwill_board order by re_ref desc, re_seq asc limit ?,?";
+	 * pstmt = con.prepareStatement(sql);
+	 * 
+	 * // ? pstmt.setInt(1, startRow-1); //시작행-1 (시작 row 인덱스 번호) pstmt.setInt(2,
+	 * pageSize); // 페이지크기 (한번에 출력되는 수)
+	 * 
+	 * // 4. sql 실행 rs = pstmt.executeQuery(); // 5. 데이터처리 ( 글1개의 정보 -&gt; DTO 1개에
+	 * 담음 -&gt; ArrayList 1칸 ) while(rs.next()) { // 데이터가 있을때마다 글 1개의 정보를 저장하는 객체 생성
+	 * BoardDTO bdto = new BoardDTO();
+	 * 
+	 * bdto.setContent(rs.getString("content")); bdto.setDate(rs.getDate("date"));
+	 * bdto.setFile(rs.getString("file")); bdto.setIp(rs.getString("ip"));
+	 * bdto.setName(rs.getString("name")); bdto.setNum(rs.getInt("num"));
+	 * bdto.setPass(rs.getString("pass")); bdto.setRe_lev(rs.getInt("re_lev"));
+	 * bdto.setRe_ref(rs.getInt("re_ref")); bdto.setRe_seq(rs.getInt("re_seq"));
+	 * bdto.setReadcount(rs.getInt("readcount"));
+	 * bdto.setSubject(rs.getString("subject"));
+	 * 
+	 * // DTO 객체를 ArrayList 한칸에 저장 boardList.add(bdto); }
+	 * 
+	 * System.out.println("DAO : 글 정보 저장완료! "+boardList.size());
+	 * 
+	 * } catch (Exception e) { e.printStackTrace(); } finally { closeDB(); } return
+	 * boardList; } // getBoardList(startRow, pageSize)
+	 */
 }

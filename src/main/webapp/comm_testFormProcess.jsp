@@ -23,6 +23,10 @@
 	String content = request.getParameter("content");
 	String email = (String)session.getAttribute("email");
 	
+	if(email == null){
+		response.sendRedirect("loginFail.jsp");
+	}
+	
 	Community comm = new Community(email, subject, content, now);
 	
 	Connection conn = ConnectionProvider.getConnection();
@@ -32,7 +36,7 @@
 	//삽입 !!
 	communityDaoImpl.insert(comm);
 	
-	response.sendRedirect("comm_testFormList.jsp");
+	response.sendRedirect("comm_free.jsp");
 %>
 <%-- <%=subject %><br>
 <%=content %><br>

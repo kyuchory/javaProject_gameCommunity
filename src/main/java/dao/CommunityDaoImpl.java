@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import dto.Community;
+import jdbc.ConnectionProvider;
 
 public class CommunityDaoImpl {
 	private Connection conn = null;
@@ -206,4 +207,60 @@ public class CommunityDaoImpl {
 		}
 		return null;
 	}
+	
+	public List<Community> getList(int startRow, int endRow) {
+		// 페이징 처리를 위한 sql / 인라인뷰, rownum 사용
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		String sql = "select * from board_free where num between ? and ? order by num asc";
+		List<Community> list = null;
+		try {
+			conn = ConnectionProvider.getConnection(); // 커넥션을 얻어옴
+			pstmt = conn.prepareStatement(sql); // sql 정의
+			pstmt.setInt(1, startRow); // sql 물음표에 값 매핑
+			pstmt.setInt(2, endRow);
+			rs = pstmt.executeQuery(); // sql 실행
+			if (rs.next()) { // 데이터베이스에 데이터가 있으면 실행
+				list = new ArrayList<>(); // list 객체 생성
+				do {
+					// 반복할 때마다 ExboardDTO 객체를 생성 및 데이터 저장
+					Community board = new Community();
+					board.setNum(rs.getLong("num"));
+					board.setEmail(rs.getString("email"));
+					board.setSubject(rs.getString("subject"));
+					board.setContent(rs.getString("content"));
+					board.setRegisterDateTime(rs.getTimestamp("REGDATE").toLocalDateTime());
+
+					list.add(board); // list에 0번 인덱스부터 board 객체의 참조값을 저장
+				} while (rs.next());
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} /*
+			 * finally { quitDB(); // DB 연결 종료 / Connection 반환 }
+			 */
+		return list; // list 반환
+	}
+	
+	//게시글 총 개수 반환
+	public int getCount(){
+		ResultSet rs = null;
+		PreparedStatement pstmt = null;
+		int count = 0;
+		String sql = "select count(*) from board_free";
+		try {
+			conn = ConnectionProvider.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			rs = pstmt.executeQuery();
+			if(rs.next()){
+				count = rs.getInt(1);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} /*
+			 * finally { quitDB(); }
+			 */
+		return count; // 총 레코드 수 리턴
+	}
+
 }
