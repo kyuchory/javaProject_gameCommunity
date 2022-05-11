@@ -20,7 +20,7 @@
 <body>
 <%@ include file="crawler/ranking.jsp" %>
 
-<jsp:include page="main_banner.jsp" />
+<jsp:include page="main_header.jsp" />
 
 <section style="background:#eeeeee;">
 	
@@ -76,7 +76,7 @@
 		
 		<div id="second-box" class="box">
 			<div class="main-title">게임소식</div>
-			<div class="container">
+			<div class="mySlides fade2">
 				<a href="https://www.inven.co.kr/webzine/news/?news=271546" target="blank">
 					<div class="news-title">'스타듀 밸리' 출시 6년 만에 2,000만 장 판매 [9]</div>
 					<div class='image-frame'>
@@ -86,6 +86,27 @@
 					<div class="news-info">게임뉴스 | 강승진 기자 (Looa@inven.co.kr) | 2022-05-10 10:59</div>
 				</a>
 			</div>
+			<div class="mySlides fade2">
+				<a href="https://www.inven.co.kr/webzine/news/?news=271546" target="blank">
+					<div class="news-title">'23스타듀 밸리' 출시 6년 만에 2,000만 장 판매 [9]</div>
+					<div class='image-frame'>
+						<img src="https://cdn.gamemeca.com/gmdb/g000/26/18/221151(3).jpg"/>
+					</div>
+					<div class="news-summary">고전적인 농업 시뮬레이션을 새롭게 각색, PC 플랫폼으로 옮겨내며 많은 사랑을 받은 스타듀 밸리가 판매량 2,000만 장을 넘기며 인디 게임 역사에 다시 이름을 새겼다. 스타듀 밸리의 2,000만 장 돌파 소식은 공식 홈페이지 게임 히스토리 섹션에 새로 추가되며 알려졌다. 올해 3월 해당 기록을 세운 스타듀 밸리는 PC를 시작으로 PS4, Xbox One,...</div>
+					<div class="news-info">게임뉴스 | 강승진 기자 (Looa@inven.co.kr) | 2022-05-10 10:59</div>
+				</a>
+			</div>
+			<div class="mySlides fade2">
+				<a href="https://www.inven.co.kr/webzine/news/?news=271546" target="blank">
+					<div class="news-title">'34스타듀 밸리' 출시 6년 만에 2,000만 장 판매 [9]</div>
+					<div class='image-frame'>
+						<img src="https://cdn.gamemeca.com/gmdb/g000/26/18/221151(3).jpg"/>
+					</div>
+					<div class="news-summary">고전적인 농업 시뮬레이션을 새롭게 각색, PC 플랫폼으로 옮겨내며 많은 사랑을 받은 스타듀 밸리가 판매량 2,000만 장을 넘기며 인디 게임 역사에 다시 이름을 새겼다. 스타듀 밸리의 2,000만 장 돌파 소식은 공식 홈페이지 게임 히스토리 섹션에 새로 추가되며 알려졌다. 올해 3월 해당 기록을 세운 스타듀 밸리는 PC를 시작으로 PS4, Xbox One,...</div>
+					<div class="news-info">게임뉴스 | 강승진 기자 (Looa@inven.co.kr) | 2022-05-10 10:59</div>
+				</a>
+			</div>
+			
 			<table class="main_selector">
 				<tr>
 					<th style="border-left:none">

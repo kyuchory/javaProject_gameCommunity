@@ -18,11 +18,6 @@
 	text-decoration:none;
 	color:black;
 	}
-	img {
-	width:100%;
-    height:100%;
-    object-fit:cover;
-	}
 	
 	header {
 	overflow:hidden;
@@ -133,7 +128,6 @@
 	}
 	#banner .slide-menu a:hover{
 	text-decoration:underline;
-	
 	}
 </style>
 </head>
@@ -149,7 +143,7 @@
 	
 	<div id="banner">
 		<ul class='main-menu'>
-			<li><a href="../index.jsp"><img src="https://www.dankook.ac.kr/html_repositories/images/www/kor_content/est_ui_int01.jpg" alt="dankook-logo"/></a></li>
+			<li><a href="index.jsp"><img src="https://www.dankook.ac.kr/html_repositories/images/www/kor_content/est_ui_int01.jpg" alt="dankook-logo" width='100px'/></a></li>
 			<li><a href="#none">게임추천</a></li>
 			<li><a href="#none">커뮤니티</a></li>
 			<li><a href="#none">게임소식</a></li>

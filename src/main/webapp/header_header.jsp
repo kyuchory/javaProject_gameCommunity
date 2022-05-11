@@ -99,11 +99,11 @@
 	<div class="border_bottom">
 		<span class="menu2" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
 		<span>
-			<a href="main.jsp" style="font-family: arial;color:black;font-size:30px;">DKU</a>
+			<a href="index.jsp" style="font-family: arial;color:black;font-size:30px;">DKU</a>
 		</span>
 		<div class='login1'style="float:right">
-			<a href="login.jsp" style="width:100px; height:40px; line-height:40px; text-align:center; border:3px solid black; border-radius:40px; margin-right:10px; color:black">로그인</a>
-			<a href="signUp.jsp" style="margin-right:10px; font-size:0.8em; font-weight:normal;">회원가입</a>
+			<a href="login_login.jsp" style="width:100px; height:40px; line-height:40px; text-align:center; border:3px solid black; border-radius:40px; margin-right:10px; color:black">로그인</a>
+			<a href="login_signUp.jsp" style="margin-right:10px; font-size:0.8em; font-weight:normal;">회원가입</a>
 		</div>
 	</div>
 	

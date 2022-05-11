@@ -34,7 +34,7 @@
 					</div>
 					
 					<div class="menu" >
-					<a href="signUp.jsp">
+					<a href="login_signUp.jsp">
 						<span class = "menu1"> 회원가입</span>
 					</a>
 					<a href="findId.jsp">
