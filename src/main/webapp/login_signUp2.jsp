@@ -14,7 +14,7 @@
  String password = request.getParameter("password");
  String name = request.getParameter("name");
 %>
-<%@ include file="header_header.jsp" %>
+<jsp:include page="header_header.jsp"/>
 <div style=height:100px></div>
 <div class="layoutDku">
 	<div class="title">게임추천정보</div>

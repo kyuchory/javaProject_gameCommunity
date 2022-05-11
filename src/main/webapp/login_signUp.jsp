@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="login_login.css"/>
 </head>
 <body>
-<%@ include file="header_header.jsp" %>
+<jsp:include page="header_header.jsp" />
 <div style=height:100px></div>
 
 <div class="layoutDku">

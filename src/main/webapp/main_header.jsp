@@ -18,11 +18,6 @@
 	text-decoration:none;
 	color:black;
 	}
-	img {
-	width:100%;
-    height:100%;
-    object-fit:cover;
-	}
 	
 	header {
 	overflow:hidden;
@@ -92,6 +87,7 @@
 	#banner .main-menu {
 	-webkit-padding-start:0px;
 	overflow:hidden;
+	margin-right:100px;
 	}
 	#banner .main-menu li{
 	width:200px;
@@ -112,6 +108,7 @@
 	font-weight:bold;
 	}
 	#banner .slide-menu {
+	margin-right:100px;
 	display:none;  /*마우스 오버 시 보이게*/
 	font-size:0.7em;
 	line-height:30px;
@@ -133,7 +130,6 @@
 	}
 	#banner .slide-menu a:hover{
 	text-decoration:underline;
-	
 	}
 </style>
 </head>
@@ -149,7 +145,7 @@
 	
 	<div id="banner">
 		<ul class='main-menu'>
-			<li><a href="../index.jsp"><img src="https://www.dankook.ac.kr/html_repositories/images/www/kor_content/est_ui_int01.jpg" alt="dankook-logo"/></a></li>
+			<li><a href="index.jsp"><img src="https://www.dankook.ac.kr/html_repositories/images/www/kor_content/est_ui_int01.jpg" alt="dankook-logo" width='100px'/></a></li>
 			<li><a href="#none">게임추천</a></li>
 			<li><a href="#none">커뮤니티</a></li>
 			<li><a href="#none">게임소식</a></li>

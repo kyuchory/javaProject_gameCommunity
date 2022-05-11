@@ -17,7 +17,7 @@
 	}
 	
 	h5 {
-	text-align:right;
+	text-align:center;
 	}
 	h5 a {
 	color:#cccccc;
@@ -27,7 +27,6 @@
 <body>
 <footer>
 	<div id="text-box">
-		<a href="menu.jsp"><img src="img/dankook-logo.png" alt="menu" title="menu" style="height:100px;"/></a>
 		<h5>
 			경기 용인시 수지구 죽전로 152 단국대학교<br>
 			<a href="https://dankook.ac.kr" target="_blank">단국대학교 바로가기</a><br><br>
