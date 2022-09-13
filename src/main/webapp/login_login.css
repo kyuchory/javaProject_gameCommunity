@@ -1,0 +1,123 @@
+@charset "UTF-8";
+.layoutDku{text-align:center;}
+.dku{
+	font-family: arial;
+	color : black;
+	font-size:50px;
+}
+	
+a{
+	text-decoration:none;
+}
+.input1{
+	height:60px;
+	width:500px;
+	margin:7px;
+	border:1px solid gray;
+	font-size:20px;
+}
+input:focus{
+
+	outline:2px solid #3c40c6;
+
+}
+.button1{
+	height:67px;
+	width:510px;
+	margin:15px;
+	border:1px solid;
+	background-color: black;
+	color:white;
+	font-weight : bolder;
+	font-size:30px;
+	transition: all 0.3s;
+}
+.menu{
+	justify-content: flex-end;
+	display:flex
+}
+
+.menu1{
+	font-family: arial;
+	color : black;
+	text-align:left;
+	width:200px;
+	margin:10px;
+}
+.menu1:hover{
+	color:#6e81df;
+}
+.title{
+	font-size:30px;
+	font-family:'Malgun Gothic';
+	border-bottom:1px solid gray;
+	height:70px;
+}
+.button1:hover{
+	/*background-color:#6e81df;*/
+	background-color:#efefef;
+	color: black;
+	border : none;
+}
+.interval{height:500px;}
+.layoutDku{
+	width:550px; 
+	margin:auto;
+	
+}
+table{
+	height:400px;
+	margin:auto;
+}
+.name1{
+	font-weight:bold;
+	text-align:left;
+}
+.input2{
+	width:430px;
+	margin:7px;
+	border:1px solid #c0c0c0;
+	font-size:15px;
+	text-align:left;
+	background-color:#efefef;
+	height:50px;
+}
+.input3{
+	width:300px;
+	margin:7px;
+	border:1px solid #c0c0c0;
+	font-size:15px;
+	text-align:left;
+	background-color:#eaf0fe;
+	height:50px;
+}
+td{
+	text-align:left;
+}
+.next{
+	color:white;
+	background-color:#6e81df;
+	border:1px solid white;
+	margin:5px;
+	height:55px;
+	width:110px;	
+	font-size:large;
+	font-weight:bold;
+	cursor:pointer;
+}
+.reset{
+	color:#6e81df;
+	background-color:white;
+	border:1px solid #6e81df;
+	margin:5px;
+	height:55px;
+	width:110px;	
+	font-size:large;
+	font-weight:bold;
+	cursor:pointer;
+}
+.name2{
+	text-align:center;
+	margin: 10px;
+}
+

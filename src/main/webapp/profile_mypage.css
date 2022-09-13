@@ -1,0 +1,91 @@
+@charset "UTF-8";
+section{
+margin:0 auto;
+	
+}
+
+#contents {
+width:700px;
+height:1000px;
+margin:0 auto;
+overflow:hidden;
+position:relative;
+}
+
+#contents .menu {
+	list-style:none;
+	height:70px;
+	display:flex;
+	justify-content: center;
+	overflow:hidden;
+	border-bottom:1px solid black;
+	font-size:1.2em;
+	margin-bottom:20px;
+	text-align:center;
+}
+#contents .menu li {
+	width:200px;
+	height:50px;
+	line-height:50px;
+	float:left;
+	margin:10px 5px;
+	border-radius:5px;
+}
+#contents .menu li a{
+	display:block;
+	
+}
+#contents .menu-name {
+	font-size:2em;
+	margin-left:20px;
+}
+
+#contents .information {
+	width:600px;
+	height: 500px;
+	margin:20px auto;
+	list-style:none;
+	padding:0 100px;
+	border-radius:10px;
+}
+#contents .information tr {
+	margin-top:20px;
+	display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}	
+#contents .information .key {
+	font-weight: bold;
+}
+#contents .information .value {
+    border: 1px solid #c0c0c0;
+    font-size: 15px;
+    text-align: left;
+    background-color: #eaf0fe;
+	height:50px;
+	line-height:50px;
+	padding-left:10px;
+	border-bottom: 3px solid #cccccc;
+    border-right: 3px solid #cccccc;
+}
+
+#contents .button {
+	margin-top:20px;
+	overflow: hidden;
+    list-style: none;
+    position:absolute;
+	right:0;
+}
+#contents .button li {
+	float:left;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	margin:10px;
+	border-left:1.5px solid #3f3f3f;
+	padding-left:12px;
+}
+#contents .button li:first-child {
+	border-left:0;
+	
+}

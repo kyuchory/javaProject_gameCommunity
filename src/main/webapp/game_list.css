@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+#contents {
+	background:#eeeeee;
+	padding-bottom:50px;
+}
+#select-bar {	
+	width:1200px;
+	height:50px;
+	padding:20px 50px;
+	margin:0 auto;
+}
+#select-bar ul {
+	border:1px solid #cccccc;
+	padding:20px;
+	border-radius:10px;
+	background:white
+}
+#select-bar ul li:first-child{
+	margin-left:0;
+	font-size:1.5em;
+	background:none;
+	color:black;
+}
+#select-bar ul li{
+	display:inline-block;
+	margin-left:5px;
+	background-color:#eeeeee;
+	padding:0 25px;
+	width:auto;
+	height:100%;
+	line-height:50px;
+	text-align:center;
+	font-size:1.7em;
+	color:#777777;
+	border-radius:5px;
+}
+#select-bar ul li:hover{
+	background-color:#cccccc;
+	
+}
+#select-bar ul li:first-child:hover{
+	background-color:white;
+	
+}
+#select-bar ul li input{
+	display:none;
+}
+#select-bar ul li label{
+	display:block;
+}
+.check-box:checked ~  .all{
+	font-weight:bold;
+	color:black;
+}
+#select-bar .search{
+	width:100px;
+	height:40px;
+	float:right;
+	margin-top:10px;
+	background:white;
+	border-radius:5px;
+	font-size:1.2em;
+	border:none;
+}
+#select-bar .search:hover{
+	background:#aaaaaa;
+	font-weight:bold;
+}
+#game-lists {
+	background:white;
+	width:1450px;
+	margin:80px auto;
+	border:1px solid #cccccc;
+	border-radius:10px;
+	padding:20px 0;
+}
+#game-lists .game-element {	
+	display:inline-block;
+	width:400px;
+	height:100px;
+	border:1px solid #cccccc;
+	border-radius:5px;
+	margin:10px 35px;
+	position: relative;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#game-lists .game-element:hover{
+	background:#eeeeee;
+}
+#game-lists .game-element img{
+	position:absolute;
+	top:10px;
+	left:30px;	
+	border-radius:5px;
+}
+#game-lists .game-element .texts{
+	position:absolute;
+	top:10px;
+	left:120px;
+	width:70%;
+	font-size:0.8em;
+}
+#game-lists .game-element .title{
+	font-size:1.5em;
+	font-weight:bold;
+}
+#game-lists .game-element .company{
+	margin-left:20px;
+	font-weight:normal;
+	font-size:0.8em;
+	color:#888888;
+}

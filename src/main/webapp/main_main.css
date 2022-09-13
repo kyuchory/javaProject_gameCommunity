@@ -1,0 +1,395 @@
+@charset "UTF-8";
+
+section {
+margin:0 auto;
+box-sizing:border-box;
+padding-bottom:20px;
+background: #d5d8df;
+}
+
+
+
+#contents {
+width:1600px;
+height: 1400px; /* 수정 */
+margin:0 auto;
+overflow:hidden;
+display:flex;
+flex-wrap: wrap;
+position:relative;
+}
+#profile{
+   position:absolute;
+   top:0;
+   left:1290px;
+width:270px;
+height:500px;
+margin:20px;
+border-radius:5px;
+text-align:center;
+background:#303030;
+}
+#profile .title{
+font-size:1.7em;
+border-bottom:1px solid #cccccc;
+border-radius: 5px 5px 0 0;
+color:white;
+height:70px;
+line-height:70px;
+}
+#profile .attendance{
+height:100px;
+background:white;
+}
+#profile .attendance a {
+width:150px;
+height:40px;
+line-height:40px;
+background:#000079;
+border-radius:60px;
+color:white;
+margin-top:20px;
+font-size:1.2em;
+}
+#profile .attendance a:hover {
+font-weight:bold;
+}
+#profile .information {
+   text-align:center;
+}
+#profile .information .status {
+color:white;
+position:relative;
+}
+#profile .information .status p {
+line-height:50px;
+text-align:left;
+margin-left:50px;
+}
+#profile .information .status p .id{
+   font-size:1.2em;
+}
+#profile .information .status a {
+width:70px;
+height:30px;
+line-height:30px;
+display:block;
+position:absolute;
+top:0;
+right:0;
+background:black;
+color:white;
+}
+#profile .information .information-details {
+display:block;
+list-style:none;
+margin:10px 50px; /* 수정 */
+}
+#profile .information .information-details li {
+width:100%;
+height:50px;
+line-height:50px;
+border:1px solid #888888;
+font-size:1.2em;
+}
+#profile .information .information-details li a {
+color:rgb(217, 217, 217);
+display:block;
+   font-size:0.8em;
+}
+#profile .information .information-details li a:hover {
+font-weight:bold;
+text-decoration:underline;
+}
+
+.box {
+background:white;
+border-radius:5px;
+}
+.information-details li:nth-child(2) {
+   color:red;
+}
+
+#first-box {
+   position:absolute;
+   top:20px;
+   left:20px;
+height:500px;
+width:350px;
+}
+#first-box div .main_gameRank_table{
+   width:100%;
+   height:100%;
+   border-collapse: collapse
+}
+#first-box div .main_gameRank_table caption{
+   height:20px;
+   padding:5px;
+   background: #303030;
+   border-radius: 5px 5px 0 0;
+   color: white;
+}
+#first-box .main_gameRank_border:nth-child(-n+5) .main_gameRank_ranking {
+   color:#ff0000;
+}
+#first-box .main_gameRank_ranking{
+   color:#919d93;
+   font-weight:bolder;
+   width : 15%;
+   text-align:center;
+   padding:5px;
+}
+#first-box .main_gameRank_thread{
+   text-align:center;
+}
+#first-box .main_gameRank_att{
+   font-size:0.7em;
+   color : gray;
+}
+#first-box .main_gameRank_img{
+   width:50px;
+   padding:2px;
+   vertical-align:middle;
+}
+#first-box .main_gameRank_gameName{
+   width:80%;
+   padding:5px;
+}
+#first-box .main_gameRank_gameName a{
+   display:block;
+}
+#first-box .main_gameRank_ImgFile{
+   width :75px;
+   height:46px;
+}
+#first-box .main_gameRank_border{
+   border-top:1px solid #e6e6e6;
+}
+
+   
+#second-box {
+height:500px;
+width:900px;
+box-sizing:border-box;
+   position:absolute;
+   top:20px;
+   left:390px;
+}
+#second-box .main-title {
+   height:20px;
+   padding:5px;
+   border-bottom:1px solid #ececec;
+   text-align:center;
+   background: #303030;
+   border-radius: 5px 5px 0 0;
+   color: white;
+}
+#second-box .news-title{
+   width:300px;
+   height:150px;
+   position:absolute;
+   top:90px;
+   left:10px;
+   font-weight:bold;
+   font-size:1.5em;
+}
+#second-box .mySlides {
+   margin-top:5px;
+   position:relative;
+}
+#second-box .image-frame{
+   width:550px;
+   height:200px;
+   position:absolute;
+   top:40px;
+   left:320px;
+}
+#second-box .image-frame img{
+   width:100%;
+   height:100%;
+}
+#second-box .news-summary{
+   width:860px;
+   height:100px;
+   position:absolute;
+   top:250px;
+   left:10px;
+}
+#second-box .news-info{
+   width:860px;
+   height:50px;
+   position:absolute;
+   top:350px;
+   left:10px;
+   font-size:0.7em;
+   color:#999999;
+}
+#second-box .slideshow-container {
+width: 100%;
+position: static;
+margin: 0px;
+}
+#second-box .main_slideImg{
+width: 100%; 
+height: 250px; 
+top : 90px;
+margin:0;
+padding:0;
+}
+
+#second-box .main_prev, .main_next {
+ cursor: pointer;
+ transition: 0.6s ease;
+ margin:0;
+ padding:0;
+ width:100%;
+ height:100%;
+}
+.main_dot:hover{
+   background-color: #717171;
+}
+#second-box .main_prev:hover, .main_next:hover{
+background-color: #717171;
+}
+#second-box .news{
+width:760px;
+height:412px;
+margin:auto;
+border-radius:10px;
+}
+#second-box .main_dot {
+ cursor:pointer;
+ background-color: #ffffff;
+ display: inline-block;
+ transition: background-color 0.6s ease;
+ margin:0;
+ padding:0;
+ width:100%;
+ height:100%;
+ border:0;
+ font-size:18px;
+}
+#second-box .main_selector{
+margin:auto;
+width:100%;
+height:60px;
+padding:0;
+border-top:1px solid #cccccc;
+border-spacing:0;
+   position:absolute;
+   bottom:0;
+}
+#second-box th{
+padding:2px;
+margin:0;
+border-left:1px solid #c0c0c0;
+}
+#second-box tr{
+bottom:0;
+}
+
+
+#third-box {
+height:300px;
+width:1560px;
+   position:absolute;
+   top: 540px;
+   left:20px;
+}
+#third-box .best-game {
+   list-style:none;
+   
+}
+#third-box .best-game .best-game-list{
+   top:0;
+   list-style:none;
+   width:300px;
+   display:inline-block;
+   margin-left:10px;
+   overflow:hidden;
+   text-align:center;
+   box-sizing:border-box;
+}
+#third-box .best-game .best-game-list .game-rank{
+   width:50px;
+   height:50px;
+   color:white;
+   font-weight:bold;
+   margin-top:5px;
+   background:#cc0000;
+   border-radius:5px;
+}
+#third-box .best-game .best-game-list .game-image{
+   margin-top:5px;
+   height:150px;
+   width:300px;
+}
+#third-box .best-game .best-game-list img{
+   width:100%;
+   height:100%;
+   border-radius:10px;
+}
+
+#third-box .best-game .best-game-list .game-name{
+   font-weight:bold;
+   font-size:1.2em;
+}
+#third-box .best-game .best-game-list .game-genre{
+   color:#999999;
+}
+#third-box .best-game .best-game-list a{
+   width:150px;
+   height:30px;
+   line-height:30px;
+   display:block;
+   background:#ffd9c6;
+   font-weight:bold;
+   border-radius:5px;
+   margin:5px auto;
+}
+
+.board_header {
+   height:20px;
+   padding:5px;
+   text-align:center;
+   background: #303030;
+   border-radius: 5px 5px 0 0;
+   color: white;
+}
+
+#fourth-box {
+height:500px;
+width:770px;
+   position:absolute;
+   top:860px;
+   left:20px;
+}
+.main_comm_table{
+   width:100%;
+   text-align:center;
+   border-collapse:seprate;
+}
+.main_comm_table_head{
+   font-size:16px;
+   color:#7a7984;
+}
+
+#fifth-box {
+   height:500px;
+   width:770px;
+   position:absolute;
+   top:860px;
+   left:810px;
+}
+.main_comm_thead{
+   border-bottom:3px solid #3e3d55;
+   height:30px;
+}
+.main_comm_tbody{
+   border-bottom:1px solid #e5e5e5;
+   height:40px;
+}
+.main_comm_table_space{
+   width:5px;
+   border:none;
+}
