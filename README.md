@@ -34,7 +34,8 @@ GamChu 주요기능 및 사진
 1. 로그인 및 회원가입
 2. 프로필
 3. 게임 순위 / 게임관련 최신 뉴스 / 커뮤니티 미리보기 (메인페이지)
-4. 게임 목록
-5. 게임 커뮤니티의 글작성
-6. MBTI별 게임 추천
-7. 출석 체크
+   >![image](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/13b2eaa4-8d9f-4681-bfd4-ec4da3de5570)
+5. 게임 목록
+6. 게임 커뮤니티의 글작성
+7. MBTI별 게임 추천
+8. 출석 체크
