@@ -41,11 +41,8 @@ GamChu 주요기능 및 사진
 6. 게임 커뮤니티의 글작성
 7. MBTI별 게임 추천
    > ![image](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/765a4056-c82e-4332-ad61-f67318da730a)
-
    > ![image](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/046bfadf-79f1-40ec-8365-d01610715d56)
-
    > ![image](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/16b3b95d-233e-4832-9aa8-b4fa43f7a895)
-
    > ![image](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/926d326b-fe9b-4d44-805a-31b768ead898)
 
 8. 출석 체크
