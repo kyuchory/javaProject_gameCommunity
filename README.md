@@ -41,25 +41,26 @@ GamChu 주요기능 및 사진
    > ![화면 캡처 2022-09-13 222925](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/3281cd7a-bfa5-4239-ba7e-7f030771637b)
 
 3. 게임 순위 / 게임관련 최신 뉴스 / 커뮤니티 미리보기 (메인페이지)
+   > 크롤링을 활용한 게임 최신 뉴스스
    >![image](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/13b2eaa4-8d9f-4681-bfd4-ec4da3de5570)
    >![image](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/7396dab7-7ba0-414e-896f-0ffd9237e6b4)
 
-4. 게임 목록
+5. 게임 목록
    >![image](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/f5646ba8-6b4c-456c-977a-eaca4a993cdc)
 
    >![image](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/a8b8a9bc-0c7c-4d26-b1fe-e91a2565a489)
-5. 게임 커뮤니티의 글작성
+6. 게임 커뮤니티의 글작성
    ><img width="769" alt="image" src="https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/6fcc9d13-91f1-42b4-9680-70ed403c081a">
    ><img width="770" alt="image" src="https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/87e4016d-3684-4b29-8879-fc598ae648cb">
 
 
-6. MBTI별 게임 추천
+7. MBTI별 게임 추천
    > ![image](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/765a4056-c82e-4332-ad61-f67318da730a)
    > ![image](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/046bfadf-79f1-40ec-8365-d01610715d56)
    > ![image](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/16b3b95d-233e-4832-9aa8-b4fa43f7a895)
    > ![image](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/926d326b-fe9b-4d44-805a-31b768ead898)
 
-7. 출석 체크
+8. 출석 체크
    > <img width="109" alt="image" src="https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/c58130cb-a9ff-4219-b4e9-222005c32418">
    
    >![image](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/e3a1d059-6fac-4c32-a5b1-69a99c2cc0fb)
