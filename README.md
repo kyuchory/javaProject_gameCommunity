@@ -30,6 +30,8 @@ GamChu Team
 > * JSP
 > * MySQL
 ---------------------------------
+게임물 관리 위원회의 게임 데이터 open api를 활용하여 우리의 MySQL 데이터 베이스로 옮기고 가공하여 활용 하였음.
+---------------------------------
 GamChu 주요기능 및 사진
 1. 로그인 및 회원가입
    > ![KakaoTalk_20220913_221757540](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/c110f22d-8aec-4018-9254-a94db2eab16c)
