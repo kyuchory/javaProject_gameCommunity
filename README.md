@@ -32,17 +32,25 @@ GamChu Team
 ---------------------------------
 GamChu 주요기능 및 사진
 1. 로그인 및 회원가입
-2. 프로필
-3. 게임 순위 / 게임관련 최신 뉴스 / 커뮤니티 미리보기 (메인페이지)
+   > ![KakaoTalk_20220913_221757540](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/c110f22d-8aec-4018-9254-a94db2eab16c)
+   > ![KakaoTalk_20220913_221738943](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/66689e16-1d82-49a6-a387-7adabe7e9177)
+   > ![KakaoTalk_20220913_222329228](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/4038f7da-45a8-425d-b121-a0fde087f5a4)
+3. 프로필
+   > ![image](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/6e1dce8d-bd75-4718-8c3c-33e54a792369)
+
+   > ![화면 캡처 2022-09-13 222925](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/3281cd7a-bfa5-4239-ba7e-7f030771637b)
+
+5. 게임 순위 / 게임관련 최신 뉴스 / 커뮤니티 미리보기 (메인페이지)
    >![image](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/13b2eaa4-8d9f-4681-bfd4-ec4da3de5570)
    >![image](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/7396dab7-7ba0-414e-896f-0ffd9237e6b4)
 
-5. 게임 목록
+6. 게임 목록
    >![image](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/f5646ba8-6b4c-456c-977a-eaca4a993cdc)
 
    >![image](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/a8b8a9bc-0c7c-4d26-b1fe-e91a2565a489)
-6. 게임 커뮤니티의 글작성
-7. MBTI별 게임 추천
+7. 게임 커뮤니티의 글작성
+   
+8. MBTI별 게임 추천
    > ![image](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/765a4056-c82e-4332-ad61-f67318da730a)
    > ![image](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/046bfadf-79f1-40ec-8365-d01610715d56)
    > ![image](https://github.com/kyuchory/javaProject_gameCommunity/assets/87301355/16b3b95d-233e-4832-9aa8-b4fa43f7a895)
